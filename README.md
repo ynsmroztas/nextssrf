@@ -139,7 +139,7 @@ python3 nextssrf.py -t https://target.com --force
 Advanced exploit shell with auto cloud detection and IAM credential extraction:
 
 ```bash
-python3 nextssrf_v2.py -t https://target.com
+python3 nextssrf.py -t https://target.com
 ```
 
 ```
@@ -191,7 +191,7 @@ nextssrf(ec2-x...)> aws
 
 ```bash
 # Detect cloud + run full exploit chain automatically
-python3 nextssrf_v2.py -t https://target.com --auto
+python3 nextssrf.py -t https://target.com --auto
 ```
 
 ---
@@ -240,16 +240,7 @@ if ($request_uri ~* "^https?://") {
 }
 ```
 
----
 
-## File Structure
-
-```
-nextssrf/
-├── nextssrf.py    # Scanner · Pipeline · Interactive shell · AWS/Azure chain
-├── README.md
-└── LICENSE
-```
 
 ---
 
